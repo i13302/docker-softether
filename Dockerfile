@@ -5,16 +5,16 @@ MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 
 #ENV VERSION v4.18-9570-rtm-2015.07.26
 #ENV VERSION v4.19-9599-beta-2015.10.19
-#http://jp.softether-download.com/files/softether/v4.22-9634-beta-2016.11.27-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.22-9634-beta-2016.11.27-linux-x64-64bit.tar.gz
-ENV VERSION v4.21-9613-beta-2016.04.24
+#ENV VERSION v4.21-9613-beta-2016.04.24
+ENV VERSION v4.22-9634-beta-2016.11.27
 WORKDIR /usr/local/vpnserver
 
 
 RUN apt-get update &&\
         apt-get -y -q install iptables gcc make wget && \
         apt-get clean && \
-        rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
-        wget http://www.softether-download.com/files/softether/${VERSION}-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-${VERSION}-linux-x64-64bit.tar.gz -O /tmp/softether-vpnserver.tar.gz &&\
+        rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \ 
+        wget http://jp.softether-download.com/files/softether/${VERSION}-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-${VERSION}-linux-x64-64bit.tar.gz -O /tmp/softether-vpnserver.tar.gz &&\
         tar -xzvf /tmp/softether-vpnserver.tar.gz -C /usr/local/ &&\
         rm /tmp/softether-vpnserver.tar.gz &&\
         make i_read_and_agree_the_license_agreement &&\
