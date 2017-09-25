@@ -5,6 +5,7 @@ MAINTAINER Frank Rosquin <frank.rosquin@gmail.com>
 
 #ENV VERSION v4.18-9570-rtm-2015.07.26
 #ENV VERSION v4.19-9599-beta-2015.10.19
+#http://jp.softether-download.com/files/softether/v4.22-9634-beta-2016.11.27-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.22-9634-beta-2016.11.27-linux-x64-64bit.tar.gz
 ENV VERSION v4.21-9613-beta-2016.04.24
 WORKDIR /usr/local/vpnserver
 
