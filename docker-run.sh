@@ -1,9 +1,6 @@
 #!/bin/bash
 
-#. ./config
-
-BNET="miyalab"
-IP="192.168.1.154"
+. ./config
 
 mkdir -p /srv/softether/etc/vpnserver/
 mkdir -p /srv/softether/local/vpnserver/
