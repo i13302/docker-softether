@@ -42,3 +42,9 @@ Using vpn server setting application in docker.
 
     web url -> "https://qiita.com/showwin/items/92861057a8b62611444d"
 
+### 流れ
+1.  仮想ハブ作成
+2.  ユーザ作成
+3.  ipsec on `ipsecenable`
+4.  ddns 確認 ` DynamicDnsGetStatus`
+5.  securenat on `SecureNatEnable`
