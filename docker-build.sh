@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker build .
+INAME="softether"
+
+docker build ./ -t ${INAME}
