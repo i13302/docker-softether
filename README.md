@@ -34,6 +34,11 @@ All together now:
     docker volume create --name softether-logs
     docker run -d -v /etc/vpnserver/vpn_server.config:/usr/local/vpnserver/vpn_server.config  -v softether-logs:/var/log/vpnserver --net host --cap-add NET_ADMIN --name softether frosquin/softether
 
-docker exec -it softegter ./vpncmd
-https://qiita.com/showwin/items/92861057a8b62611444d
+
+## Vpn Server setting
+Using vpn server setting application in docker.
+    `docker exec -it softegter ./vpncmd`
+    <a href="AWS(EC2)でSoftEtherを使ってL2TP_IPsecなVPNを構築する (Mac)_-_Qiita.pdf">Document</a>
+
+    web url -> "https://qiita.com/showwin/items/92861057a8b62611444d"
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#. ./config
+
 BNET="miyalab"
 IP="192.168.1.154"
 
