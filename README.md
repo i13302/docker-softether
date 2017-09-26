@@ -48,3 +48,7 @@ Using vpn server setting application in docker.
 3.  ipsec on `ipsecenable`
 4.  ddns 確認 ` DynamicDnsGetStatus`
 5.  securenat on `SecureNatEnable`
+
+
+# 結論
+どうもうまく接続できないので，150.15.97.201:443 -> 192.168.1.155:22でSSHを待ち受けにし，SSHトンネルを利用するように方針変更．
